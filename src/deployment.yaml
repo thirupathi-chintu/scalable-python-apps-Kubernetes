@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-node-deployment
+spec:
+  selector:
+    matchLabels:
+      app: flasknode
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: flasknode
+    spec:
+      containers:
+      - name: flasknode
+        image: thirupathip/flask
+        ports:
+        - containerPort: 5000
