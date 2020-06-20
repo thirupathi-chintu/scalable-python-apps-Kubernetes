@@ -1,4 +1,4 @@
-# Steps to run and deploy the application on to IBM Kubernetes Services
+# Steps to run and deploy the application on to Kubernetes Services
 
 ## Prerequisites
 
