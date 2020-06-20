@@ -1,9 +1,9 @@
 FROM python:2.7-onbuild
-LABEL maintainer="Kunal Malhotra, kunal.malhotra1@ibm.com"
+LABEL maintainer="Thirupathi Peraboina, thirupathiperaboina@gmail.com"
 RUN apt-get update
 RUN mkdir /app
 WORKDIR /app
-COPY process /app
+COPY app /app
 RUN pip install -r requirements.txt
 EXPOSE 5000
 ENTRYPOINT [ "python" ]
