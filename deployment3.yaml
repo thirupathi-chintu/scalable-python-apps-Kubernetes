@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-node-deployment
+  name: app-node-deployment3
 spec:
   selector:
     matchLabels:
-      app: appnode
+      app: appnode2
   replicas: 1
   template:
     metadata:
       labels:
-        app: appnode
+        app: appnode2
     spec:
       containers:
       - name: appnode
-        image: thirupathip/app
+        image: thirupathip/app:3
         ports:
-        - containerPort: 5000
+        - containerPort: 5002
