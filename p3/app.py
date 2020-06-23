@@ -1,8 +1,7 @@
 import time
-print("Process 3")
 while True:
   localtime = time.localtime()
   result = time.strftime("%I:%M:%S %p", localtime)
   print(result)
-  time.sleep(1)
-
+  print("Process 3")
+  time.sleep(50)
