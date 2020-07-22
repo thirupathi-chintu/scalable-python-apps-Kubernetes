@@ -6,7 +6,7 @@ while True:
         localtime = time.localtime()
         result = time.strftime("%I:%M:%S %p", localtime)
         print(result)
-        print("{}.{}".format(i + 1, names[i]))
+        print("{}.{}".format(1, names[1]))
     continue
 
 
