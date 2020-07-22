@@ -3,7 +3,7 @@ LABEL maintainer="Thirupathi Peraboina, thirupathiperaboina@gmail.com"
 RUN apt-get update
 RUN mkdir /app
 WORKDIR /app
-COPY proccess /app
+COPY app.py /app
 #RUN pip install -r requirements.txt
 EXPOSE 5000
 ENTRYPOINT [ "python" ]
