@@ -4,7 +4,8 @@ RUN apt-get update
 RUN mkdir /app
 WORKDIR /app
 COPY app /app
-RUN pip install -r /app/requirements.txt
+COPY ./app/requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 EXPOSE 5000
 ENTRYPOINT [ "python" ]
 CMD [ "app.py" ]
