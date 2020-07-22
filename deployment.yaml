@@ -15,9 +15,3 @@ spec:
       containers:
       - name: appnode
         image: thirupathip/app:1
-      - name: appnode1
-        image: thirupathip/app:2
-      - name: appnode2
-        image: thirupathip/app:3
-      - name: appnode3
-        image: thirupathip/app:4
